@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rockcument</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Scissors paper and rock</h1>
+      </div>
+        <!-- Game panel -->
+      <h2>
+        You- <span id="playerScore">0</span
+        ><span id="playerChoice">-- Choice</span>
+      </h2>
+      <div class="player-container" id="player">
+        <img src="./images/scissors.png" alt="Scissor" onclick="select('Scissor')" id="playerScissor">
+        <img src="./images/paper.png" onclick="select('Paper')" alt="Paper" id="playerPaper">
+        <img src="./images/rock.png" onclick="select('Rock')" alt="Rock" id="playerRock">
+      </div>
+
+      <h2>
+        You- <span id="computerScore">0</span
+        ><span id="computerChoice">-- Choice</span>
+      </h2>
+      <div class="computer-container" id="computer">
+        <img src="./images/scissors.png" alt="Scissor" id="computerScissor">
+        <img src="./images/paper.png" alt="Paper" id="computerPaper">
+        <img src="./images/rock.png" alt="Rock" id="computerRock">
+      </div>
+
+      <img src="./images/reset.png" alt="Reset" onclick="location.reload()" id="reset">
+      <div class="result-container">
+          <h3 id="resultText">You Won!</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
